@@ -33,8 +33,8 @@ Microsoft Learn Student Ambassador
 def send_email(participant_name,to_email, eventname,attachment_path):
     smtp_server = 'smtp.gmail.com'  # Gmail SMTP server
     smtp_port = 465  # Port for SSL
-    smtp_user = 'r.tarunnayaka25042005@gmail.com'  # Your Gmail address
-    smtp_password = 'zpji gmrm oqli kvyy'
+    smtp_user = 'your gmail'  # Your Gmail address
+    smtp_password = 'your pass'
     body = write_message(participant_name,eventname)
     subject =f"Congratulations on Completing the {eventname}!"
     try:
@@ -77,29 +77,5 @@ def send_email(participant_name,to_email, eventname,attachment_path):
 
 
 
-# # Example usage
-# if __name__ == "__main__":
-#     smtp_server = 'smtp.gmail.com'  # Gmail SMTP server
-#     smtp_port = 465  # Port for SSL
-#     smtp_user = 'r.tarunnayaka25042005@gmail.com'  # Your Gmail address
-#     smtp_password = 'zpji gmrm oqli kvyy'  # Your Gmail password or App Password
-
-#     csv_file_path = 'p2.csv'  # Path to your CSV file
-
-#     # Read the CSV file
-#     try:
-#         with open(csv_file_path, newline='') as csvfile:
-#             reader = csv.DictReader(csvfile)
-#             for row in reader:
-#                 to_email = row['email']
-#                 subject = row['subject']
-#                 body = row['body']
-#                 attachment_path = row['attachment']
-
-#                 print(f"Processing email for {to_email} with attachment {attachment_path}")
-
-#                 send_email(to_email, subject, body, attachment_path, smtp_server, smtp_port, smtp_user, smtp_password)
-#     except Exception as e:
-#         print(f"Failed to read CSV file. Error: {str(e)}")
 
 
